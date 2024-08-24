@@ -68,7 +68,7 @@ function Detail({ meme }: { meme: any }) {
             </form>
           </>
         ) : (
-          <img src={memeData} alt="Generated Meme" />
+          <Image src={memeData} alt="Generated Meme" />
         )}
       </div>
     </main>

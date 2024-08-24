@@ -20,7 +20,7 @@ export default async function Home() {
       <div className="flex justify-center items-center w-[60%] flex-wrap mt-10">
         {memes.map((meme: any) => {
           return (
-            <Link href={`/detail/${meme.id}`}>
+            <Link key={meme.id} href={`/detail/${meme.id}`}>
               <Image
                 className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
                 src={meme.url}
